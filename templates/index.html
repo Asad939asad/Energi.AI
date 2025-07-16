@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        /* Hide scrollbar for all elements */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* Optional: Ensure body is scrollable */
+  body {
+    overflow-y: scroll;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE 10+ */
+  }
+      * {
+        box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <meta charset="UTF-8" />
+   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Energi.AI</title>
+  </head>
+  <body class="m-0">
+    <div class="min-h-screen w-full flex flex-col">
+    <div
+      id="_21_19__Desktop_-_2"
+      class="overflow-hidden bg-[linear-gradient(_180.0000000000008deg,rgba(255,255,255,1)_0%,rgba(230,221,246,0.5)_100%_)] h-[336.1375rem]"
+    >
+<div
+  class="w-full h-[100vh] bg-cover bg-center"
+  style="background-image: url('{{ url_for('static', filename='assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg') }}');"
+></div>
+
+<!-- LEFT dot (shift left from center) -->
+<div
+  class="absolute bg-[rgba(217,217,217,1)] h-5 w-[1.1875rem] rounded-full"
+  style="top: 60.5625rem; left: calc(50% - 3rem);"
+></div>
+
+<!-- RIGHT dot (shift right from center) -->
+<div
+  class="absolute bg-[rgba(217,217,217,1)] h-5 w-[1.1875rem] rounded-full"
+  style="top: 60.5625rem; left: calc(50% + 3rem);"
+></div>
+
+<div
+  class="absolute bg-[rgba(217,217,217,1)] h-5 w-[1.1875rem] rounded-full"
+  style="top: 60.5625rem; left: calc(50% + 0rem);"
+></div>
+
+      <span
+        id="_18_2__Save_Energy_for_a_Be"
+        class="flex justify-start text-left items-start h-48 w-[53.9375rem] absolute left-[3.375rem] top-[3.75rem]"
+      >
+        <span
+          class="bg-white bg-clip-text text-transparent not-italic font-normal tracking-[1.5rem]"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Jua;
+            font-size: 3.75rem;
+          "
+        >
+          Save Energy <br />for a <br />Better Tomorrow
+        </span>
+      </span>
+
+      <div
+        id="_20_12__rocket-innovation-sp"
+        class="absolute rounded-[3.125rem] h-[14.6875rem] w-[14.6875rem] left-[80.0625rem] top-[20.25rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/rocketinnovationspacesvgrepocom_1_1.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_19_9____All_Rights_Reserve"
+        class="flex justify-start text-left items-start h-[3.1875rem] w-[23.5rem] absolute left-[48.25rem] top-[333.175rem] opacity-30"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal tracking-[0.0625rem]"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 1.5rem;
+          "
+        >
+          @Asad939 All Rights Reserved.
+        </span>
+      </span>
+      <div
+        id="_32_2__Union"
+        class="absolute shadow-[0rem_0rem_5rem_0rem_rgba(0,0,0,0.25)]"
+      ></div>
+
+<span
+  id="_32_4__30"
+  class="flex justify-start text-left items-start h-[3.625rem] w-[3.8125rem] absolute left-[45.6875rem] top-[121.5rem]"
+>
+  <span
+    class="whitespace-nowrap not-italic font-normal text-black"
+    style="
+      font-family: Inter;
+      font-size: 3rem;
+    "
+  >
+    {{ Temperature }}
+
+  </span>
+</span>
+
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[4.875rem] top-[260.7rem] h-[75.625rem] w-[108.9625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[4.875rem] top-[51.7rem] h-[75.625rem] w-[108.9625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[0.875rem] top-[115.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+<div
+  id="_32_5__Union"
+  class="absolute left-[57.875rem] top-[115.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[0.875rem] top-[145.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+<div
+  id="_32_5__Union"
+  class="absolute left-[57.875rem] top-[145.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[0.875rem] top-[175.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+<div
+  id="_32_5__Union"
+  class="absolute left-[57.875rem] top-[175.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[0.875rem] top-[205.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+<div
+  id="_32_5__Union"
+  class="absolute left-[57.875rem] top-[205.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+<div
+  id="_32_5__Union"
+  class="absolute left-[0.875rem] top-[235.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+<div
+  id="_32_5__Union"
+  class="absolute left-[57.875rem] top-[235.5rem] h-[36.625rem] w-[60.5625rem] "
+  style="background: url('{{ url_for('static', filename='assets/images/union_1.svg') }}') center / cover no-repeat;"
+></div>
+
+
+
+    
+
+      <span
+        id="_32_9___C"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[3.5625rem] absolute left-[47.875rem] top-[151.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          &#xb0;C
+        </span>
+      </span>
+      <div
+        id="_32_10__Union"
+        class="absolute shadow-[0rem_0.25rem_5rem_0rem_rgba(0,0,0,0.25)]"
+      ></div>
+
+      <span
+        id="_32_12__Peak_Hour"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[14.6875rem] absolute left-[26.75rem] top-[227.8625rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Peak Hour
+        </span>
+      </span>
+
+            <span
+        id="_32_12__Peak_Hour"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[14.6875rem] absolute left-[87.125rem] top-[133.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Standard <br />Time
+        </span>
+      </span>
+
+
+      <span
+        id="_32_17__45_4"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[6.4375rem] absolute left-[96.0625rem] top-[181.6875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{CO2}}
+        </span>
+      </span>
+
+
+      <span
+        id="_32_20__30_"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[6.25rem] absolute left-[102.25rem] top-[151.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{Humidity}}
+        </span>
+      </span>
+      <span
+        id="_32_21__Air_Humidity"
+        class="flex justify-start text-left items-start h-[7.25rem] w-[12.625rem] absolute left-[85.0625rem] top-[163.0625rem]"
+      >
+        <span
+          class="bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Air <br />Humidity
+        </span>
+      </span>
+      <div
+        id="_32_22__Union"
+        class="absolute shadow-[0rem_0rem_5rem_0rem_rgba(0,0,0,0.25)]"
+      ></div>
+
+      <span
+        id="_32_24__45_4"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[6.4375rem] absolute left-[36.9375rem] top-[181.625rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{predicted_total_power}}
+        </span>
+      </span>
+      <div id="_32_25__Union" class="absolute"></div>
+
+
+
+      <span
+        id="_32_33__Summer"
+        class="flex justify-start text-left items-start h-[2.875rem] w-52 absolute left-[29.125rem] top-[136rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{season}}
+        </span>
+      </span>
+      <span
+        id="_32_34___C"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[3.5625rem] absolute left-[49.8125rem] top-[121.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          &#xb0;C
+        </span>
+      </span>
+      <span
+        id="_32_35__AM"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[4.75rem] absolute left-[104.4375rem] top-[121.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{Zone}}
+        </span>
+      </span>
+      <span
+        id="_32_36__40"
+        class="flex justify-start text-left items-start h-[4.0625rem] w-[5.125rem] absolute left-[98.9875rem] top-[121.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{minute}}
+        </span>
+      </span>
+      <span
+        id="_32_37__10"
+        class="flex justify-start text-left items-start h-[4.0625rem] w-[4.4375rem] absolute left-[93rem] top-[121.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{hour}}
+        </span>
+      </span>
+      <span
+        id="_32_38___"
+        class="flex justify-start text-left items-start h-[4.0625rem] w-[1.1875rem] absolute left-[97.1875rem] top-[121.3rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          :
+        </span>
+      </span>
+      <div
+        id="_32_39__temperature-blank-sv"
+        class="absolute h-[17.875rem] w-[17.875rem] left-[5.125rem] top-[155.25rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/temperatureblanksvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_40__Air_Temperature"
+        class="flex justify-start text-left items-start h-[7.25rem] w-[18.125rem] absolute left-[21.25rem] top-[165.0625rem]"
+      >
+        <span
+          class="bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Air<br />Temperature
+        </span>
+      </span>
+      <span
+        id="_32_41__30"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[3.8125rem] absolute left-[43.6875rem] top-[151.5rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{AirTemperature}}
+        </span>
+      </span>
+      <div
+        id="_32_42__humidity-alt-svgrepo"
+        class="absolute h-64 w-[16.46375rem] left-[66.125rem] top-[153.5rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/humidityaltsvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+      <div
+        id="_32_43__electricity-svgrepo-"
+        class="absolute h-[18.1875rem] w-[18.1875rem] left-[6.5625rem] top-[186rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/electricitysvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_44__Predicted_Power"
+        class="flex justify-start text-left items-start h-[7.25rem] w-[13.6875rem] absolute left-[23rem] top-[194.6875rem]"
+      >
+        <span
+          class="bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Predicted<br />Power
+        </span>
+      </span>
+      <span
+        id="_32_45__KWH"
+        class="flex justify-start text-left items-start h-[2.9375rem] w-[9.0625rem] absolute left-[45.125rem] top-[181.625rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          KWH
+        </span>
+      </span>
+      <span
+        id="_32_46__KWH"
+        class="flex justify-start text-left items-start h-[3.6875rem] w-[9.0625rem] absolute left-[45.125rem] top-[241.625rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          KWH
+        </span>
+      </span>
+      <span
+        id="_32_47__45_4"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[6.4375rem] absolute left-[36.125rem] top-[241.6875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{SystemProduction}}
+        </span>
+      </span>
+      <div
+        id="_32_48__co2-svgrepo-com_2"
+        class="absolute h-[15.0625rem] w-[15.0625rem] left-[67.125rem] top-[185.875rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/co2svgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_49__CO2_Emission"
+        class="flex justify-start text-left items-start h-[7.25rem] w-[12.5625rem] absolute left-[85.5rem] top-[192.6875rem]"
+      >
+        <span
+          class="bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          CO2<br />Emission
+        </span>
+      </span>
+      <span
+        id="_32_50__Kgs"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[5.25rem] absolute left-[103.4375rem] top-[181.6875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Kgs
+        </span>
+      </span>
+
+
+      <span
+        id="_32_50__%"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[5.25rem] absolute left-[106.4375rem] top-[151.6875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          %
+        </span>
+      </span>
+
+
+
+
+      <div
+        id="_32_51__electricity-cable-sv"
+        class="absolute h-[13.5rem] w-[13.5rem] left-[8.9375rem] top-[216.6875rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/electricitycablesvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_52__True"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[6.375rem] absolute left-[45.625rem] top-[211.875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{is_peak_hour}}
+        </span>
+      </span>
+      <div
+        id="_32_53__radiation-nuclear-sv"
+        class="absolute h-56 w-56 left-[66.9875rem] top-[215.6875rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/radiationnuclearsvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_54__Radiation"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[13.25rem] absolute left-[83.3125rem] top-[228.0625rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Radiation
+        </span>
+      </span>
+      <span
+        id="_32_55__W_m_"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[7.8125rem] absolute left-[100.8975rem] top-[211.9175rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          W/m&#xb2;
+        </span>
+      </span>
+      <span
+        id="_32_56__620"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[5.625rem] absolute left-[94.625rem] top-[211.9175rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{Radiation}}
+        </span>
+      </span>
+      <div
+        id="_32_57__electricity-svgrepo-"
+        class="absolute h-[17.5rem] w-[17.5rem] left-[6.5rem] top-[245.625rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/electricitysvgrepocom_1_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <div
+        id="_32_58__clock-six-svgrepo-co"
+        class="absolute h-[20.1875rem] w-[20.1875rem] left-[65.125rem] top-[122.75rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/clocksixsvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_59__Total_Production"
+        class="flex justify-start text-left items-start h-[7.25rem] w-[15.4375rem] absolute left-[24.125rem] top-[253.75rem]"
+      >
+        <span
+          class="bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          Total<br />Production
+        </span>
+      </span>
+
+
+
+      <div
+        id="_32_60__temperature-sun-svgr"
+        class="absolute h-[16.8125rem] w-[16.8125rem] left-[67.5rem] top-[245.3125rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/temperaturesunsvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+      <span
+        id="_32_61__SunShine"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[13.3125rem] absolute left-[85.5625rem] top-[255.875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          SunShine
+        </span>
+      </span>
+      <span
+        id="_32_62__6_324"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[8.125rem] absolute left-[95.8125rem] top-[241.6875rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+          {{Sunshine}}
+        </span>
+      </span>
+
+
+      <span
+        id="_32_62__6_324"
+        class="flex justify-start text-left items-start h-[3.625rem] w-[8.125rem] absolute left-[100.8125rem] top-[241.6475rem]"
+      >
+        <span
+          class="whitespace-nowrap bg-black bg-clip-text text-transparent not-italic font-normal"
+          style="
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 3rem;
+          "
+        >
+        Hours
+        </span>
+      </span>
+
+
+
+      <div
+        id="_32_63__sunshine-svgrepo-com"
+        class="absolute h-[17.375rem] w-[17.375rem] left-[10.3125rem] top-[125.1875rem]"
+        style="background: url('{{ url_for('static', filename='assets/images/sunshinesvgrepocom_2.png') }}') 100% / cover no-repeat;"
+      ></div>
+
+<div class="relative w-full h-[calc(67.1875rem+45.6875rem)]">
+  <!-- Background: larger and slightly visible at borders -->
+
+
+  <!-- Foreground image: slightly smaller, centered -->
+  <div
+    class="absolute left-1/2 -translate-x-1/2 top-[4.1875rem] w-[75.768125rem] h-[45.6875rem] rounded-[2.125rem] overflow-hidden z-10"
+  >
+    <img
+      src="{{ url_for('static', filename='assets/images/download_8_3.png') }}"
+      alt="Main Image"
+      class="w-full h-full object-cover opacity-95"
+    />
+  </div>
+</div>
+
+
+
+
+<!-- Background Rectangle -->
+<div
+  id="_32_65__Rectangle_3"
+  class="absolute bg-[rgba(206,247,227,1)] rounded-[3.125rem] h-[39.5rem] w-[65.5625rem] left-[27.4rem] top-[279.8125rem]"
+></div>
+
+<!-- Wrapped and Confined Text -->
+<span
+  id="_32_66__-_Avoid_using_HVAC_n"
+  class="flex justify-start items-start h-[36rem] w-[59.4375rem] absolute left-[30.5625rem] top-[281rem] overflow-hidden"
+>
+  <span
+    class="text-black break-words not-italic font-normal overflow-y-auto"
+    style="
+      font-family: Inter;
+      font-size: 1.9rem;
+      max-height: 36rem;
+      width: 100%;
+      overflow-y: auto;
+    "
+  >
+    {{ power_insight | safe }}
+  </span>
+</span>
+
+
+<span
+  id="_32_68__Recommended_Actions"
+  class="flex justify-center items-center h-[2.9375rem] w-[33.0625rem] absolute left-[43.4375rem] top-[275.6875rem]"
+>
+  <span
+    class="whitespace-nowrap not-italic font-normal text-black"
+    style="
+      font-family: Almarai;
+      font-size: 3rem;
+    "
+  >
+    Recommended Actions
+  </span>
+</span>
+
+    </div>
+    <div class="flex-grow"></div>
+
+
+  </body>
+</html>
