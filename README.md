@@ -4,6 +4,8 @@
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 at 11 33 12 PM" src="https://github.com/user-attachments/assets/651a8a07-1586-4b13-9eb6-97ad48c88ce3" />
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 at 11 33 05 PM" src="https://github.com/user-attachments/assets/f6cafca4-720e-4c66-b3c8-e2d441130890" />
 <img width="1920" height="1080" alt="Screenshot 2025-07-16 at 11 32 58 PM" src="https://github.com/user-attachments/assets/e77f43ad-f606-4f7d-8e8c-06cd12efff54" />
+<img width="1920" height="1080" alt="Screenshot 2025-07-16 at 11 32 46 PM" src="https://github.com/user-attachments/assets/36f2ed0b-7d6a-4460-9755-f96b95c975b0" />
+
 
 **Energi.AI** is a modern, responsive HTML + Tailwind CSS energy insights dashboard.  
 It combines beautiful UI with smart logic to visualize energy predictions and recommendations dynamically.
